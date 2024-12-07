@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: BookTest
-        setup-command: javac -cp .:junit-4.xx.jar src/*.java test/*.java
-        command: java -cp .:junit-4.xx.jar org.junit.runner.JUnitCore BookTest
+        setup-command: ''
+        command: gradle test
         timeout: 10
         max-score: 20
     - name: Autograding Reporter
