@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Patron {
     private String name;
-    private static final ArrayList<Book> borrowedBooks = new ArrayList<>();
+    final ArrayList<Book> borrowedBooks = new ArrayList<>();
 
     private static ArrayList<Book> books = new ArrayList<>();
 
